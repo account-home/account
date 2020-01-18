@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.restdocs:spring-restdocs-core:2.0.4.RELEASE">
+    <CLASSES>
+      <root url="jar://D:/mvn_Repo/maven_3.3.9/org/springframework/restdocs/spring-restdocs-core/2.0.4.RELEASE/spring-restdocs-core-2.0.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/mvn_Repo/maven_3.3.9/org/springframework/restdocs/spring-restdocs-core/2.0.4.RELEASE/spring-restdocs-core-2.0.4.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/mvn_Repo/maven_3.3.9/org/springframework/restdocs/spring-restdocs-core/2.0.4.RELEASE/spring-restdocs-core-2.0.4.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
