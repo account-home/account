@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.home.account.dao.PaysDao">
+    <resultMap id="pays" type="com.home.account.dictionary.Pays">
+        <id column="pay_id" jdbcType="VARCHAR" property="pay_id" javaType="String"/>
+        <result column="pay_method" jdbcType="VARCHAR" property="pay_method" javaType="String"/>
+    </resultMap>
+    <insert id="addPays" parameterType="com.home.account.dictionary.Pays" >
+        INSERT INTO PAYS(PAY_ID,PAY_METHOD) VALUES('${pay_id}','${pay_method}')
+    </insert>
+    <update id="updatePays" parameterType="com.home.account.dictionary.Pays">
+        UPDATE PAYS SET PAY_ID = '${pay_id}' ,  PAY_METHOD = '${pay_method}' WHERE PAY_ID = '${pay_id}'
+    </update>
+    <delete id="deletePays" parameterType="String">
+    DELETE  FROM PAYS WHERE PAY_ID = '${pay_id}'
+    </delete>
+    <select id="getPays" resultMap="pays" >
+        SELECT *  FROM PAYS;
+    </select>
+</mapper>

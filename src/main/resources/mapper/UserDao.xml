@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.home.account.dao.UserDao">
+    <resultMap id="User" type="com.home.account.entity.User">
+        <id column="user_id" jdbcType="VARCHAR" property="operationId" javaType="String"/>
+        <result column="user_net_name" jdbcType="VARCHAR" property="requestUrl" javaType="String"/>
+        <result column="user_name" jdbcType="VARCHAR" property="requestMethod" javaType="String"/>
+        <result column="user_iphone" jdbcType="VARCHAR" property="requestFunction" javaType="String"/>
+        <result column="user_address" jdbcType="DATE" property="requestDate" javaType="String"/>
+        <result column="user_grader" jdbcType="VARCHAR" property="requestParam" javaType="String"/>
+        <result column="user_picture" jdbcType="VARCHAR" property="responseTime" javaType="Long"/>
+        <result column="user_password" jdbcType="VARCHAR" property="responseValue" javaType="String"/>
+        <result column="user_password" jdbcType="VARCHAR" property="responseValue" javaType="String"/>
+
+    </resultMap>
+    <select id="findById" parameterType="com.home.account.entity.User" resultMap="User">
+
+    </select>
+
+</mapper>

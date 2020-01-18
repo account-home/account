@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.home.account.dao.ApiOperationDao">
+    <resultMap id="apiOperation" type="com.home.account.entity.ApiOperationLog">
+        <id column="operationId" jdbcType="VARCHAR" property="operationId" javaType="String"/>
+        <result column="requestUrl" jdbcType="VARCHAR" property="requestUrl" javaType="String"/>
+        <result column="requestMethod" jdbcType="VARCHAR" property="requestMethod" javaType="String"/>
+        <result column="requestFunction" jdbcType="VARCHAR" property="requestFunction" javaType="String"/>
+        <result column="requestDate" jdbcType="DATE" property="requestDate" javaType="String"/>
+        <result column="requestParam" jdbcType="VARCHAR" property="requestParam" javaType="String"/>
+        <result column="responseTime" jdbcType="BIGINT" property="responseTime" javaType="Long"/>
+        <result column="responseValue" jdbcType="VARCHAR" property="responseValue" javaType="String"/>
+        <result column="clientIp" jdbcType="VARCHAR" property="clientIp" javaType="String"/>
+    </resultMap>
+    <insert id="apiOpertionLog" parameterType="com.home.account.entity.ApiOperationLog" >
+        INSERT INTO RESEARCH_LOG(OPERATIONID,REQUESTURL,REQUESTMETHOD,REQUESTFUNCTION,REQUESTDATE,REQUESTPARAM,RESPONSETIME,RESPONSEVALUE,CLIENTIP)
+        VALUES(#{operationId},#{requestUrl},#{requestMethod},#{requestFunction},#{requestDate},#{requestParam},#{responseTime},#{responseValue},#{clientIp})
+    </insert>
+
+</mapper>

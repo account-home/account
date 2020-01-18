@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.home.account.dao.ConsumptionsDao">
+    <resultMap id="consumption" type="com.home.account.dictionary.Consumptions">
+        <id column="consumption_id" jdbcType="VARCHAR" property="consumption_id" javaType="String"/>
+        <result column="consumption_type" jdbcType="VARCHAR" property="consumption_type" javaType="String"/>
+    </resultMap>
+    <insert id="addConsumptions" parameterType="com.home.account.dictionary.Consumptions" >
+        INSERT INTO CONSUMPTIONS(consumption_id,consumption_type) VALUES('${consumption_id}','${consumption_type}')
+    </insert>
+    <update id="updateConsumptions" parameterType="com.home.account.dictionary.Consumptions">
+        UPDATE Consumptions SET consumption_id = '${consumption_id}' ,  consumption_type = '${consumption_type}' WHERE consumption_id = '${consumption_id}'
+    </update>
+    <delete id="deleteConsumptions" parameterType="String">
+    DELETE  FROM Consumptions WHERE consumption_id = '${consumption_id}'
+    </delete>
+    <select id="getConsumptions" resultMap="consumption" >
+        SELECT *  FROM CONSUMPTIONS;
+    </select>
+</mapper>
