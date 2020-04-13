@@ -45,6 +45,7 @@ public class CodeController {
      * 验证验证码的方法
      * @param request 请求体
      * @return error--验证码错误 或者succeed--通过
+     * 验证逻辑 1.每个客户端度会有一个独立的session，将code存到session里面，便于验证
      */
     @PostMapping("/getCheckCode")
     public String getCheckCode(HttpServletRequest request) {
@@ -61,7 +62,7 @@ public class CodeController {
         if(code != "" && codeSession.equalsIgnoreCase(code)){
          return "succeed";
         }
-        return  "error";
+         return  "error";
     }
 
 }

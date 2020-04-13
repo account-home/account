@@ -49,6 +49,16 @@ public class FileController {
         }
     }
 
+    /**
+     * 解决文件名重复的问题
+     * 时间+文件名称，较为靠谱
+     */
+
+
+    /**
+     * 上传文件 文件名称重复问题
+     * @param fileName 文件名称
+     */
     @RequestMapping("/upFile")
     public void upFile(@Param("fileName") String  fileName )   {
         try{
@@ -59,6 +69,11 @@ public class FileController {
         }
     }
 
+    /**
+     * 根据文件名称来下载文件，
+     * @param fileName 文件名
+     * @param response 文件流
+     */
     @RequestMapping("/downFile")
     public void downFile(@Param("fileName") String  fileName,HttpServletResponse response )   {
         try{

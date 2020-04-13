@@ -3,12 +3,9 @@ package  com.home.account.aop;
 import java.lang.annotation.*;
 
 /**
- * @author 犬小哈 （微信号：小哈学Java）
- * @site www.exception.site
- * @date 2019/2/12
- * @time 下午9:19
- * @discription
- **/
+ * 定义日志注解，用于注解接口访问，方便记载访问信息
+ * author 吴应平
+ */
 @Target({ElementType.PARAMETER, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

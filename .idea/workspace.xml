@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32bad81d-cfca-40f1-86ba-d9811972dce8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Template/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/error.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/views/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/bookConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/bookConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/ftpConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/ftpConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/messageQueueConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/messageQueueConfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/aop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/aop/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/aop/WebLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/aop/WebLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/config/BookConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/config/BookConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/config/FtpConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/config/FtpConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/CodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/CodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/DataDictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/DataDictionaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/DefaultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/DefaultController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/LoginController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,8 +115,17 @@
       <workItem from="1579337021188" duration="657000" />
       <workItem from="1579339028833" duration="51000" />
       <workItem from="1586764049193" duration="736000" />
-      <workItem from="1586764856168" duration="631000" />
+      <workItem from="1586764856168" duration="1188000" />
+      <workItem from="1586766586581" duration="4180000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化项目！">
+      <created>1586765499921</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586765499921</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +153,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/home/account/controller/DataDictionaryController.java</url>
-          <line>31</line>
+          <line>39</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

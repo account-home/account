@@ -5,6 +5,8 @@ import com.home.account.serviceimp.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 
 /**
  * 登录控制器
@@ -16,6 +18,15 @@ public class LoginController {
      @Autowired
      private UserServiceImpl userService;
 
+    /**
+     *  验证代码逻辑
+     *  验证通过生成token，将token存到redis中，token存入规则为（用户名，token）
+     * @param code 验证码
+     * @param userId 用户ID
+     * @param userPassword 登录密码
+     * @param requests 请求体
+     * @return 返回token或者错误信息
+     */
     @RequestMapping("/loginCheck")
     public String LoginCheck(String code, String userId, String userPassword,   HttpServletRequest requests) {
 
@@ -26,6 +37,10 @@ public class LoginController {
             user.setUser_id(userId);
             user.setUser_password(userPassword);
             if(userService.validate(user)){
+                HttpSession session = requests.getSession();
+                String token = "token";
+                //分别存在session和redis里面
+                session.setAttribute(userId,token);
                 return "succeed";
             }
             return "userName or password error";

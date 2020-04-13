@@ -5,6 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
+/**
+ * 测试时用的一个实体类
+ * 用于测试是否读取到properties文件的信息
+ */
 @Component
 @PropertySource("classpath:config/bookConfig.properties")
 @ConfigurationProperties(prefix="book.host")

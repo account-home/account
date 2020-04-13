@@ -106,7 +106,7 @@ public class LogAspect {
     @Around("apiLog() && @annotation(operLog)")
     public Object around(ProceedingJoinPoint joinPoint,OperLog operLog) {
         long startTime = System.currentTimeMillis();
-        logger.info("=====================环绕日志记载========================");
+        logger.info("=====================环绕日志记载启动========================");
         ApiOperationLog operation = new ApiOperationLog();
         Object result = null;
         try {
