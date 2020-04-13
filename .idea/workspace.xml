@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32bad81d-cfca-40f1-86ba-d9811972dce8" name="Default Changelist" comment="" />
+    <list default="true" id="32bad81d-cfca-40f1-86ba-d9811972dce8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Template/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/error.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/bookConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/bookConfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/ftpConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/ftpConfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/messageQueueConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/messageQueueConfig.properties" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,10 +25,18 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="JavaScript File" />
+        <option value="FxmlFile" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="account-2020-4-13" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -38,6 +57,7 @@
   <component name="ProjectId" id="1WV6sD60G15z5oaOKWI45aiR6GU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -45,7 +65,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/img" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -53,6 +73,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java_project\account\src\main\resources\static\img" />
       <recent name="E:\project\account\src\main\resources\mapper" />
       <recent name="E:\project\account\src\main\java\com\home\account\service" />
       <recent name="E:\project\account\src\main\resources" />
@@ -93,23 +114,9 @@
       <workItem from="1579317627571" duration="10640000" />
       <workItem from="1579337021188" duration="657000" />
       <workItem from="1579339028833" duration="51000" />
-      <workItem from="1579339659302" duration="574000" />
+      <workItem from="1586764049193" duration="736000" />
+      <workItem from="1586764856168" duration="631000" />
     </task>
-    <task id="LOCAL-00001" summary="初始化项目！">
-      <created>1579339684899</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1579339684899</updated>
-    </task>
-    <task id="LOCAL-00002" summary="初始化项目！">
-      <created>1579339960882</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1579339960882</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
