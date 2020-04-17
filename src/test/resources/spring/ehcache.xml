@@ -1,0 +1,39 @@
+<config
+        xmlns='http://www.ehcache.org/v3'
+        xmlns:jsr107='http://www.ehcache.org/v3/jsr107'>
+    <service>
+        <jsr107:defaults>
+            <jsr107:cache name="default" template="heap-cache"/>
+        </jsr107:defaults>
+    </service>
+    <cache alias="javaoaCache" uses-template="heap-cache">
+        <key-type>java.lang.Object</key-type>
+        <value-type>java.lang.Object</value-type>
+        <expiry>
+            <tti unit="minutes">30</tti>
+        </expiry>
+        <heap unit="entries">500</heap>
+    </cache>
+    <cache alias="javaoaOneMinCache" uses-template="heap-cache">
+        <key-type>java.lang.Object</key-type>
+        <value-type>java.lang.Object</value-type>
+        <expiry>
+            <tti unit="minutes">10</tti>
+        </expiry>
+        <heap unit="entries">500</heap>
+    </cache>
+    <cache alias="javaoaFormDesign" uses-template="heap-cache">
+        <key-type>java.lang.Object</key-type>
+        <value-type>java.lang.Object</value-type>
+        <expiry>
+            <tti unit="minutes">30</tti>
+        </expiry>
+        <heap unit="entries">500</heap>
+    </cache>
+    <cache-template name="heap-cache">
+        <resources>
+            <heap unit="entries">2000</heap>
+            <offheap unit="MB">100</offheap>
+        </resources>
+    </cache-template>
+</config>
