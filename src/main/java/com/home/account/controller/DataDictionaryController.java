@@ -4,6 +4,7 @@ package com.home.account.controller;
 import com.home.account.dictionary.Consumptions;
 import com.home.account.dictionary.Pays;
 import com.home.account.dictionary.TradingSource;
+import com.home.account.entity.Result;
 import com.home.account.serviceimp.DataDictionaryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,14 +21,17 @@ public class DataDictionaryController {
 
     @Autowired
     private DataDictionaryServiceImpl dataDictionaryService;
+    private Result result;
 
     /**
      * 获取支付方式
      * @return Pays
      */
     @RequestMapping("getPays")
-    public List<Pays> getPays(){
-      return   dataDictionaryService.getPays();
+    public Result getPays(){
+        result.setSuccess(true);
+        result.setData(dataDictionaryService.getPays());
+        return  result ;
 
     }
 

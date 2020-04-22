@@ -24,7 +24,7 @@ public class CodeController {
 
    private  static Logger logger = LoggerFactory.getLogger(CodeController.class);
 
-    @RequestMapping("/getCode")
+    @RequestMapping("/getcode")
     public void getCode(HttpServletResponse response,HttpServletRequest request)throws IOException {
         // 调用工具类生成的验证码和验证码图片
         Map<String, Object> codeMap = CodeUtil.generateCodeAndPic();
@@ -47,7 +47,7 @@ public class CodeController {
      * @return error--验证码错误 或者succeed--通过
      * 验证逻辑 1.每个客户端度会有一个独立的session，将code存到session里面，便于验证
      */
-    @PostMapping("/getCheckCode")
+    @PostMapping("/checkcode")
     public String getCheckCode(HttpServletRequest request) {
         String code = "";
         String codeSession = "";
