@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32bad81d-cfca-40f1-86ba-d9811972dce8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Template/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/error.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/views/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/home/account/config/BaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/api/ApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/home/account/entity/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/home/account/serviceimp/api/ServiceUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/baseconfig.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/bookConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/bookConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/ftpConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/ftpConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/messageQueueConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/messageQueueConfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/config/BookConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/config/BookConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/CodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/CodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/DataDictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/DataDictionaryController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +23,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
         <option value="JavaScript File" />
         <option value="FxmlFile" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,9 +43,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\mvn_Repo\maven_3.3.9" />
-        <option name="mavenHome" value="D:/java-app/apache-Maven/apache-maven-3.3.9" />
-        <option name="userSettingsFile" value="D:\java-app\apache-Maven\apache-maven-3.3.9\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\java-app\apache-Maven\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -65,18 +63,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java_project\account\src\test\resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java_project\account\src\test\resources\config" />
+      <recent name="E:\java_project\account\src\test" />
       <recent name="E:\java_project\account\src\main\resources\static\img" />
       <recent name="E:\project\account\src\main\resources\mapper" />
       <recent name="E:\project\account\src\main\java\com\home\account\service" />
-      <recent name="E:\project\account\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -91,7 +94,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.AccountApplication">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.home.account.Test" />
+      <module name="account" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.home.account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.home.account.controller.TestController" />
+      <module name="account" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.home.account.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AccountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="account" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.home.account.AccountApplication" />
@@ -99,6 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TestController" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -115,8 +150,30 @@
       <workItem from="1579337021188" duration="657000" />
       <workItem from="1579339028833" duration="51000" />
       <workItem from="1586764049193" duration="736000" />
-      <workItem from="1586764856168" duration="631000" />
+      <workItem from="1586764856168" duration="1188000" />
+      <workItem from="1586766586581" duration="4180000" />
+      <workItem from="1586916813597" duration="8967000" />
+      <workItem from="1586936388600" duration="798000" />
+      <workItem from="1586998575566" duration="11041000" />
+      <workItem from="1587083948346" duration="5565000" />
+      <workItem from="1587458201851" duration="2187000" />
+      <workItem from="1587516853595" duration="900000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化项目！">
+      <created>1586765499921</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586765499921</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修改配置。">
+      <created>1587108073996</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587108073996</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,14 +194,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目！" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化项目！" />
+    <MESSAGE value="修改配置。" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改配置。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/home/account/controller/DataDictionaryController.java</url>
-          <line>31</line>
+          <line>43</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

@@ -46,6 +46,7 @@ jackson:
   serialization:
     WRITE_DATES_AS_TIMESTAMPS: false
     # 使用druid数据源
+
 hikari:
   minimum-idle: 5
   # 空闲连接存活最大时间，默认600000（10分钟）

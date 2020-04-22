@@ -1,5 +1,6 @@
 package  com.home.account.controller;
 
+import com.home.account.entity.Bills;
 import com.home.account.util.HttpUtil;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperRunManager;
@@ -14,6 +15,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.HashMap;
+import java.util.ResourceBundle;
 
 /**
  * 测试控制器
@@ -67,6 +69,21 @@ public class TestController {
         } catch (JRException | IOException e) {
             logger.info(e.toString());
         }
+    }
+
+    @RequestMapping("getBills")
+    @ResponseBody
+   public Bills  getBills(){
+       Bills bills = new Bills();
+       bills.setBiil_id("999");
+       bills.setUser_id("888");
+       return  bills ;
+
+   }
+    public static void main(String[] args) {
+        ResourceBundle resource = ResourceBundle.getBundle("test/config/antgisoa");
+        String key = resource.getString("ftpServer");
+        System.out.println(key);
     }
 }
 

@@ -4,6 +4,7 @@ package com.home.account.controller;
 import com.home.account.dictionary.Consumptions;
 import com.home.account.dictionary.Pays;
 import com.home.account.dictionary.TradingSource;
+import com.home.account.entity.Result;
 import com.home.account.serviceimp.DataDictionaryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,31 +12,45 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * 操作数据字典的接口
+ */
 @RestController
 @RequestMapping("dataDictionary")
 public class DataDictionaryController {
 
     @Autowired
     private DataDictionaryServiceImpl dataDictionaryService;
+    private Result result;
 
     /**
-     * 获取数据字典的方式接口
-     * @return
+     * 获取支付方式
+     * @return Pays
      */
     @RequestMapping("getPays")
-    public List<Pays> getPays(){
-      return   dataDictionaryService.getPays();
+    public Result getPays(){
+        result.setSuccess(true);
+        result.setData(dataDictionaryService.getPays());
+        return  result ;
 
     }
+
+    /**
+     *  获取消费方式
+     * @return Consumptions
+     */
     @RequestMapping("getConsumptions")
     public List<Consumptions> getConsumptions(){
         return   dataDictionaryService.getConsumptions();
-
     }
+
+    /**
+     * 交易方式，线上线下
+     * @return TradingSource
+     */
     @RequestMapping("getTradingSource")
     public List<TradingSource> getTradingSource(){
         return   dataDictionaryService.getTradingSource();
-
     }
 
     /**
