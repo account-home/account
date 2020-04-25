@@ -3,19 +3,18 @@
 
 <mapper namespace="com.home.account.dao.UserDao">
     <resultMap id="User" type="com.home.account.entity.User">
-        <id column="user_id" jdbcType="VARCHAR" property="operationId" javaType="String"/>
-        <result column="user_net_name" jdbcType="VARCHAR" property="requestUrl" javaType="String"/>
-        <result column="user_name" jdbcType="VARCHAR" property="requestMethod" javaType="String"/>
-        <result column="user_iphone" jdbcType="VARCHAR" property="requestFunction" javaType="String"/>
-        <result column="user_address" jdbcType="DATE" property="requestDate" javaType="String"/>
-        <result column="user_grader" jdbcType="VARCHAR" property="requestParam" javaType="String"/>
-        <result column="user_picture" jdbcType="VARCHAR" property="responseTime" javaType="Long"/>
-        <result column="user_password" jdbcType="VARCHAR" property="responseValue" javaType="String"/>
-        <result column="user_password" jdbcType="VARCHAR" property="responseValue" javaType="String"/>
+        <id column="user_id" jdbcType="VARCHAR" property="user_id" javaType="String"/>
+        <result column="user_net_name" jdbcType="VARCHAR" property="user_net_name" javaType="String"/>
+        <result column="user_name" jdbcType="VARCHAR" property="user_name" javaType="String"/>
+        <result column="user_iphone" jdbcType="VARCHAR" property="user_iphone" javaType="String"/>
+        <result column="user_address" jdbcType="DATE" property="user_address" javaType="String"/>
+        <result column="user_grader" jdbcType="VARCHAR" property="user_grader" javaType="String"/>
+        <result column="user_picture" jdbcType="VARCHAR" property="user_picture" javaType="Long"/>
+        <result column="user_password" jdbcType="VARCHAR" property="user_password" javaType="String"/>
 
     </resultMap>
     <select id="findById" parameterType="com.home.account.entity.User" resultMap="User">
-
+    select * from users where user_id = '${id}'
     </select>
 
 </mapper>

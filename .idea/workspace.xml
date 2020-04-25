@@ -1,23 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32bad81d-cfca-40f1-86ba-d9811972dce8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/home/account/config/BaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/api/ApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/home/account/entity/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/home/account/serviceimp/api/ServiceUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config/baseconfig.properties" afterDir="false" />
+    <list default="true" id="32bad81d-cfca-40f1-86ba-d9811972dce8" name="Default Changelist" comment="统一读取配置文件">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/home/account/config/StaticConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/laydate/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/laydate/theme/default/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/laydate/theme/default/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/laydate/theme/default/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/laydate/theme/default/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/laydate/theme/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_icu_icu4j_57_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_2_1_7_js6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jasperreports_jasperreports_6_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_52.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_core_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_xml_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_core_compiler_ecj_4_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jfreechart_1_0_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.iml" beforeDir="false" afterPath="$PROJECT_DIR$/account.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/config/BookConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/config/BookConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/CodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/CodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/DataDictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/DataDictionaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/config/BaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/config/BaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/controller/api/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/controller/api/ApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/serviceimp/ApiOperationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/serviceimp/ApiOperationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/serviceimp/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/serviceimp/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/home/account/serviceimp/api/ServiceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/home/account/serviceimp/api/ServiceUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/views/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/baseconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/baseconfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="account" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -68,18 +110,18 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\java_project\account\src\test\resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java_project\account\src\main\resources\static\js" />
+      <recent name="E:\java_project\account\src\main\resources\static\img" />
       <recent name="E:\java_project\account\src\test\resources\config" />
       <recent name="E:\java_project\account\src\test" />
-      <recent name="E:\java_project\account\src\main\resources\static\img" />
       <recent name="E:\project\account\src\main\resources\mapper" />
-      <recent name="E:\project\account\src\main\java\com\home\account\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java_project\account\src\test\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -157,7 +199,16 @@
       <workItem from="1586998575566" duration="11041000" />
       <workItem from="1587083948346" duration="5565000" />
       <workItem from="1587458201851" duration="2187000" />
-      <workItem from="1587516853595" duration="900000" />
+      <workItem from="1587516853595" duration="1617000" />
+      <workItem from="1587518873915" duration="21353000" />
+      <workItem from="1587603888156" duration="8000" />
+      <workItem from="1587628061524" duration="5289000" />
+      <workItem from="1587634763576" duration="1168000" />
+      <workItem from="1587688015988" duration="4173000" />
+      <workItem from="1587718053332" duration="2916000" />
+      <workItem from="1587722425323" duration="146000" />
+      <workItem from="1587797253711" duration="324000" />
+      <workItem from="1587813164311" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目！">
       <created>1586765499921</created>
@@ -173,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587108073996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="统一读取配置文件">
+      <created>1587517815974</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587517815974</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +253,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目！" />
     <MESSAGE value="修改配置。" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改配置。" />
+    <MESSAGE value="统一读取配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="统一读取配置文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -204,6 +263,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/home/account/controller/DataDictionaryController.java</url>
           <line>43</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/home/account/controller/LoginController.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/home/account/controller/LoginController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

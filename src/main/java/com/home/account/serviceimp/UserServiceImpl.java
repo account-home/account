@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 @Component
 public class UserServiceImpl {
 
-    @Resource
+    @Autowired
     private UserDao userDao;
 
     /**
@@ -22,9 +22,9 @@ public class UserServiceImpl {
      */
     public   boolean validate(User user){
 
-     User user2 = userDao.findById(user);
-
-     if (user2==null){
+     User user2 = userDao.findById(user.getUser_id());
+     //还有一种情况就是以手机号登陆的。
+     if (user2!=null){
          //使用username进行验证
          if (user.getUser_id()!=null){
              //这有可能是手机号

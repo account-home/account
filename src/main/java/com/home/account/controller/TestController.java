@@ -10,6 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,14 +28,18 @@ public class TestController {
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @RequestMapping(value = "/loginSucceed")
+    @RequestMapping(value = "/main")
     public String login() {
-        return "/views/loginSucceed.html";
+        return "/index";
     }
 
     @RequestMapping(value = "/error")
     public String error() {
-        return "/views/error.html";
+        return "/views/error";
+    }
+    @RequestMapping(value = "/index")
+    public String index() {
+        return "index";
     }
 
 
@@ -83,7 +89,6 @@ public class TestController {
     public static void main(String[] args) {
         ResourceBundle resource = ResourceBundle.getBundle("test/config/antgisoa");
         String key = resource.getString("ftpServer");
-        System.out.println(key);
     }
 }
 

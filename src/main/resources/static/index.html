@@ -1,10 +1,229 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 480px;
+            width: 1024px;
+            text-align: center;
+        }
+        html{
+            background-image: url("img/login.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+
+        #wrap {
+            height: 100%;
+            width: 100%;
+            background-image: url("img/login.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: relative;
+        }
+        #head {
+            height: 100px;
+            width: 100%;
+            background-color: #66CCCC;
+            text-align: center;
+            position: relative;
+        }
+        #foot {
+            width: 100%;
+            height: 126px;
+            background-color: #CC9933;
+            position: relative;
+        }
+        #wrap .logGet {
+            height: 320px;
+            width: 368px;
+            position: absolute;
+            background-color: #FFFFFF;
+            top: 10%;
+            right: 15%;
+        }
+        .logC a input {
+            width: 100%;
+            height: 42px;
+            margin-top: 30px;
+            background-color: #ee7700;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        .logGet .logD.logDtip .p1 {
+            display: inline-block;
+            width: 100%;
+            font-size: 22px;
+            padding: 15px 0px;
+            text-align: center;
+        }
+        #wrap .logGet .logD.logDtip {
+            width:86%;
+            border-bottom: 1px solid #ee7700;
+            margin: 0px 25px 30px;
+        }
+
+        .logGet .lgD .textName{
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0px 5px;
+        }
+
+        .logGet .lgD .text {
+            width: 160px;
+            height: 30px;
+        }
+        .logGet .lgD .checkPic{
+            width:80px;
+            height: 34px;
+            vertical-align: bottom;
+        }
+        #wrap .logGet .lgD {
+            width: 86%;
+            margin: 15px 25px;
+
+        }
+        #wrap .logGet .logC {
+            width: 86%;
+            margin-left: 25px;
+        }
+
+
+        .title {
+            font-family: "宋体";
+            color: #FFFFFF;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);  /* 使用css3的transform来实现 */
+            font-size: 36px;
+            height: 40px;
+            width: 30%;
+        }
+
+        .copyright {
+            font-family: "宋体";
+            color: #FFFFFF;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);  /* 使用css3的transform来实现 */
+            width: 40%;
+            text-align:center;
+        }
+
+        #foot .copyright .img {
+            width: 100%;
+            height: 24px;
+            position: relative;
+        }
+
+        #foot .copyright p {
+            height: 24px;
+            width: 100%;
+        }
+        #login {
+                margin-top: 50px;
+                margin-left: 240px;
+                width: 1024px;
+                height: 400px;
+        }
+         </style>
+</head>
+
+<body>
+<div id="login">
+<div class="header" id="head">
+    <div class="title">家庭记账小助手</div>
+</div>
+
+<div class="wrap" id="wrap">
+    <div class="logGet">
+        <!-- 头部提示信息 -->
+        <div class="logD logDtip">
+            <p class="p1">登录</p>
+        </div>
+        <!-- 输入框  使用数据传输的name全部小写-->
+        <div class="lgD">
+            <span class="textName">用户名：</span>
+            <input type="text" class="text" placeholder="输入用户名" name="username" />
+        </div>
+        <div class="lgD">
+            <span class="textName">密&nbsp&nbsp&nbsp码：</span>
+            <input type="text" class="text" placeholder="输入用户密码"  name="password"/>
+        </div>
+        <div class="lgD">
+            <span class="textName">验证码：</span>
+            <input type="text" class="text" placeholder="请输入验证码"  style="width: 80px" name="checkcode" id="checkcode"/>
+            <img src="/account/getcode" class="checkPic" alt="验证码" />
+        </div>
+
+        <div class="logC">
+            <a  target="_self"><input type="button"  value="登 录" onclick="login()"/></a>
+        </div>
+    </div>
+</div>
+
+<div class="footer" id="foot">
+    <div class="copyright">
+        <p>武汉 © 友爱家园</p>
+        <div class="img">
+            <span>联系邮箱：yuanyuan@qq.com</span>
+        </div>
+
+        <div class="img">
+            <span>联系地址：温馨家庭小火炉</span>
+        </div>
+
+        <div class="img">
+            <span>联系电话：15207104346</span>
+        </div>
+
+    </div>
+
+</div>
+</div>
+<script src="js/jquery-3.4.1.min.js" ></script>
+<script>
+    function checkLogin(){
+        var  obj = $(".lgD[input]");
+        for (var i = 0; i <obj.length ; i++) {
+            if (obj[i].val() != null&&obj[i].val() != ""){
+                alert("字段不能为空！")
+                return false;
+            }
+        }
+        return  true;
+    }
+function login() {
+   var code =  $("#checkcode").val();
+    $.post("login/loginCheck",
+        {
+            code:code,
+            userId:"1",
+            userPassword:"123456"
+        },
+        function(data,status){
+            alert("Data: " + data.message + "\nStatus: " + status);
+            if (data.success){
+                window.location.href="views/main.html";
+            }
+        });
+
+}
+
+
+</script>
 </body>
 </html>

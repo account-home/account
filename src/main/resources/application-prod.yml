@@ -10,8 +10,10 @@ spring:
   thymeleaf:
     prefix: classpath:/templates/
     cache: false
-    mode: HTML
+    mode: LEGACYHTML5
     encoding: utf-8
+    servlet:
+      content-type: text/html
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
