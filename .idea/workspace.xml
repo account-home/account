@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32bad81d-cfca-40f1-86ba-d9811972dce8" name="Default Changelist" comment="" />
+    <list default="true" id="32bad81d-cfca-40f1-86ba-d9811972dce8" name="Default Changelist" comment="初始化项目！">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_clojure_clojure_1_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_clojure_core_specs_alpha_0_1_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_clojure_spec_alpha_0_1_143.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_tobereplaced_lettercase_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.iml" beforeDir="false" afterPath="$PROJECT_DIR$/account.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/ftpConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/ftpConfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/home/account/AccountApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/home/account/AccountApplicationTests.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +104,11 @@
       <workItem from="1579337021188" duration="657000" />
       <workItem from="1579339028833" duration="51000" />
       <workItem from="1579339659302" duration="574000" />
+      <workItem from="1587813920496" duration="2254000" />
+      <workItem from="1587861730142" duration="2537000" />
+      <workItem from="1588238841342" duration="2209000" />
+      <workItem from="1588392770298" duration="1815000" />
+      <workItem from="1588420556610" duration="655000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目！">
       <created>1579339684899</created>
