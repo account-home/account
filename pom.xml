@@ -22,7 +22,7 @@
         <itextpdf.version>5.5.0</itextpdf.version>
         <itext-asian.version>5.2.0</itext-asian.version>
         <groovy-all.version>2.4.11</groovy-all.version>
-        <mysql-connector-java.version>8.0.15</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.16</mysql-connector-java.version>
         <redis.clients.version>2.9.0</redis.clients.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <spring.boot.mybatis.version>2.1.1</spring.boot.mybatis.version>
