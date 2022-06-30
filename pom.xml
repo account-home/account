@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jasper.version>6.12.2</jasper.version>
         <jasper.fonts.version>6.0.0</jasper.fonts.version>
-        <itextpdf.version>5.5.0</itextpdf.version>
+        <itextpdf.version>5.5.12</itextpdf.version>
         <itext-asian.version>5.2.0</itext-asian.version>
         <groovy-all.version>2.4.11</groovy-all.version>
         <mysql-connector-java.version>8.0.15</mysql-connector-java.version>
